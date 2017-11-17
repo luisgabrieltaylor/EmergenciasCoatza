@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dip">
+
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+        android:layout_marginRight="10dip">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/phone_call"
+            android:layout_width="60dip"
+            android:layout_height="60dip"/>
+
+    </LinearLayout>
+
+    <!-- Title Of Song-->
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="17dip"
+        android:textStyle="bold"/>
+
+    <!-- description -->
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:textColor="#343434"
+        android:lines="2"
+        android:maxLines="2"
+        android:layout_marginRight="15dp"
+        android:textSize="13dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/thumbnail"/>
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:text="@string/view_map"
+        android:drawableLeft="@drawable/ic_map"
+        android:drawablePadding="15dp"
+        android:layout_below="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <!-- description -->
+</RelativeLayout>

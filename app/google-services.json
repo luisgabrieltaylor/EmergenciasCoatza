@@ -1,0 +1,38 @@
+{
+  "project_info": {
+    "project_number": "764471491628",
+    "project_id": "emergencias-coatza"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:764471491628:android:0d10d0610797873e",
+        "android_client_info": {
+          "package_name": "emergencias.sainthannaz.com.emergenciascoatza"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcXMskdsIJ4XeFWtT-D8dgAtrQvOOH-AY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-77223851-5"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

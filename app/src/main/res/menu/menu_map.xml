@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".aplication.MainActivity">
+
+    <item
+        android:id="@+id/action_map"
+        android:icon="@drawable/ic_layers"
+        android:orderInCategory="100"
+        android:title="@string/action_map"
+        app:showAsAction="always">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/map_satellite"
+                    android:title="@string/map_satellite" />
+                <item
+                    android:id="@+id/map_normal"
+                    android:title="@string/map_normal" />
+                <item
+                    android:id="@+id/map_hybrid"
+                    android:title="@string/map_hybrid" />
+                <item
+                    android:id="@+id/map_terrain"
+                    android:title="@string/map_terrain" />
+            </group>
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/menu_principal"
+        android:id="@+id/nav_item_home"
+        android:icon="@drawable/sent"
+        android:orderInCategory="0"/>
+
+    <item android:title="@string/menu_acerca"
+        android:id="@+id/nav_item_about"
+        android:icon="@drawable/spam"
+        android:orderInCategory="1"/>
+
+    <item android:title="@string/menu_compartir"
+        android:id="@+id/nav_item_share"
+        android:icon="@drawable/sent"
+        android:orderInCategory="1"/>
+
+    <!--
+    <item android:title="Drafts"
+        android:id="@+id/nav_item_about"
+        android:icon="@drawable/draft"/>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:title="Spam"
+                android:icon="@drawable/spam"/>
+            <item
+                android:title="Bin"
+                android:icon="@drawable/bin"/>
+        </menu>
+    </item>
+    -->
+    <group android:id="@+id/group_settings_id">
+
+        <item android:title="@string/menu_configuracion"
+            android:id="@+id/nav_item_settings"
+            android:icon="@drawable/settings"
+            android:orderInCategory="2"/>
+        <item android:title="@string/menu_ayuda"
+            android:id="@+id/nav_item_help"
+            android:icon="@drawable/help"
+            android:orderInCategory="3"/>
+    </group>
+
+
+
+</menu>

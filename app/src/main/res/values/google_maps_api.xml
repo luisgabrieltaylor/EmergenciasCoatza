@@ -1,0 +1,27 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=83:A3:8C:A4:4D:63:1F:FC:92:94:F5:BE:B5:FC:05:17:72:8E:11:D3%3Bmapa.sainthannaz.com.mypickupmap
+
+    You can also add your credentials to an existing key, using these values:
+
+    Package name:
+    83:A3:8C:A4:4D:63:1F:FC:92:94:F5:BE:B5:FC:05:17:72:8E:11:D3
+
+    SHA-1 certificate fingerprint:
+    83:A3:8C:A4:4D:63:1F:FC:92:94:F5:BE:B5:FC:05:17:72:8E:11:D3
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDFUz2Ea8i9dSu4wpfxT19kqgWWeF6Gmq8</string>
+    <!--<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCFW3gD72HlOFYC-pSDsPRav5e1g0V0UUE</string>-->
+</resources>
