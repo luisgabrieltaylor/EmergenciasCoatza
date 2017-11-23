@@ -4,24 +4,7 @@
             "outputFile": "D:\\EmergenciasCoatza\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.0.aar\\cf25033b7a9fc2eb9aec5472ff348423\\res\\values-mn\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
-                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
-                        "startOffsets": "283,391,580,710,815,1011,1135,1270,1473,1578,1777,1904,2104,2298,2385,2473",
-                        "endColumns": "107,188,129,104,195,123,134,202,104,198,126,199,193,86,87,101",
-                        "endOffsets": "390,579,709,814,1010,1134,1269,1472,1577,1776,1903,2103,2297,2384,2472,2574"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "105,217,406,540,649,845,973,1321,1524,1633,1832,1963,2163,2361,2452,2544",
-                        "endColumns": "111,188,133,108,195,127,138,202,108,198,130,199,197,90,91,105",
-                        "endOffsets": "212,401,535,644,840,968,1107,1519,1628,1827,1958,2158,2356,2447,2539,2645"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.6.0.aar\\7268f547381fa10b1393a633803e958b\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.6.0.aar\\93c8587d09f7446f768d73185ed3887e\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10",
                         "startColumns": "0,0,0,0,0,0,0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\a8cba6e7a1abbacbd9887040f53deb56\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\db406d6adb79023de983a1614cbb176b\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -52,6 +35,23 @@
                         "startOffsets": "1112",
                         "endColumns": "208",
                         "endOffsets": "1316"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.0.aar\\b78d26b10063d54354dcfad46284db72\\res\\values-mn\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,391,580,710,815,1011,1135,1270,1473,1578,1777,1904,2104,2298,2385,2473",
+                        "endColumns": "107,188,129,104,195,123,134,202,104,198,126,199,193,86,87,101",
+                        "endOffsets": "390,579,709,814,1010,1134,1269,1472,1577,1776,1903,2103,2297,2384,2472,2574"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,406,540,649,845,973,1321,1524,1633,1832,1963,2163,2361,2452,2544",
+                        "endColumns": "111,188,133,108,195,127,138,202,108,198,130,199,197,90,91,105",
+                        "endOffsets": "212,401,535,644,840,968,1107,1519,1628,1827,1958,2158,2356,2447,2539,2645"
                     }
                 }
             ]

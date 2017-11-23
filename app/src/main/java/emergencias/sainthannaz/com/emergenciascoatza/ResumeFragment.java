@@ -27,6 +27,10 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -37,6 +41,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import emergencias.sainthannaz.com.emergenciascoatza.app.MyApplication;
 import emergencias.sainthannaz.com.emergenciascoatza.model.Numbers;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.ConnectivityStatus;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.DatabaseHandler;
@@ -58,6 +63,7 @@ public class ResumeFragment extends Fragment {
     DatabaseHandler db;
     private static final String TAG = MainActivity.class.getSimpleName();
     public PreferanceManager prefManager;
+    private AdView mAdView;
     public ResumeFragment() {
         // Required empty public constructor
     }
@@ -72,7 +78,37 @@ public class ResumeFragment extends Fragment {
         setHasOptionsMenu(true);
         db = new DatabaseHandler(getActivity());
         recyclerView = (RecyclerView) view.findViewById(R.id.recycler_view);
+        MobileAds.initialize(getContext(), "ca-app-pub-7418223157292725~5198435692");
         mAdapter = new NumbersAdapter(numbersList, getContext());
+        mAdView = (AdView) view.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                // Check the LogCat to get your test device ID
+                //.addTestDevice("B2AA3E70A677C5F4956FF6A5601D3744")
+                .build();
+        mAdView.setAdListener(new AdListener() {
+            @Override
+            public void onAdLoaded() {
+            }
+            @Override
+            public void onAdClosed() {
+                Toast.makeText(getActivity(), "La publicidad se a cerrado!", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onAdFailedToLoad(int errorCode) {
+                Toast.makeText(getActivity(), "Fallo al cargar la publicidad" + errorCode, Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onAdLeftApplication() {
+                Toast.makeText(getActivity(), "¡Gracias por contribuir!", Toast.LENGTH_SHORT).show();
+            }
+            @Override
+            public void onAdOpened() {
+                super.onAdOpened();
+            }
+        });
+
+        mAdView.loadAd(adRequest);
 
         recyclerView.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
@@ -318,6 +354,33 @@ public class ResumeFragment extends Fragment {
         textView.setCompoundDrawablesWithIntrinsicBounds(R.drawable.ic_check, 0, 0, 0);
         textView.setCompoundDrawablePadding(getResources().getDimensionPixelOffset(R.dimen.snackbar_icon_padding));
         snackbar.show();
-
     }
+
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+
+        super.onPause();
+    }
+
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
+        super.onDestroy();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        MyApplication.getInstance().trackEvent("Pantalla","Ejecucion","Tab principal");
+        MyApplication.getInstance().trackScreenView("ResumeFragment");
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+    }
+
 }

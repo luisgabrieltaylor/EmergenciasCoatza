@@ -109,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
 
         //calling sync state is necessay or else your hamburger icon wont show up
         actionBarDrawerToggle.syncState();
+
+
     }
 
     @Override
@@ -144,6 +146,7 @@ public class MainActivity extends AppCompatActivity {
     public void onResume() {
         super.onResume();
         // Tracking the screen view
-        MyApplication.getInstance().trackScreenView("Main Screen");
+        MyApplication.getInstance().trackScreenView("Main Acivity");
     }
+
 }

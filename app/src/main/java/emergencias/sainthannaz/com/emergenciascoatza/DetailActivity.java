@@ -63,11 +63,8 @@ public class DetailActivity extends AppCompatActivity {
             picture = extras.getString("picture");
             category = extras.getString("category");
             update = extras.getString("update");
-
-
-
         } else {
-
+            System.out.println("¡No pasaron datos o no existen!");
         }
 
         final Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
