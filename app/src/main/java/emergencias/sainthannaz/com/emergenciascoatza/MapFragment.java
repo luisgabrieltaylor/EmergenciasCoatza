@@ -2,14 +2,18 @@ package emergencias.sainthannaz.com.emergenciascoatza;
 
 
 import android.Manifest;
+import android.content.Context;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.location.Criteria;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -129,6 +133,7 @@ public class MapFragment extends Fragment {
                     // for ActivityCompat#requestPermissions for more details.
                     return;
                 }
+
                 mUiSettings.setMapToolbarEnabled(true);
                 mUiSettings.setZoomControlsEnabled(true);
                 mUiSettings.setCompassEnabled(true);
@@ -177,8 +182,6 @@ public class MapFragment extends Fragment {
                             .icon(bitmapDescriptor)
                             .title(mapTitle)
                             .snippet(mapDescription));
-
-
                 }
 
                 // For zooming automatically to the location of the marker
@@ -245,6 +248,7 @@ public class MapFragment extends Fragment {
                     // add markers from database to the map
                 }
                 mMap.setMyLocationEnabled(true);
+
                 //mMyLocationLayerCheckbox.setChecked(true);
             } else {
                 mLocationPermissionDenied = true;
@@ -309,5 +313,9 @@ public class MapFragment extends Fragment {
             default:
                 return super.onOptionsItemSelected(item);
         }
+    }
+
+    public void focusInMap(){
+
     }
 }

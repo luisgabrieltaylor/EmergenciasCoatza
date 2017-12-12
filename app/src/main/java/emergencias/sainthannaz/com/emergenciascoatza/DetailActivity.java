@@ -36,6 +36,9 @@ import java.util.List;
 
 import emergencias.sainthannaz.com.emergenciascoatza.model.SubNumbers;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.DatabaseHandler;
+import emergencias.sainthannaz.com.emergenciascoatza.tools.DividerItemDecoration;
+
+import static emergencias.sainthannaz.com.emergenciascoatza.TabFragment.viewPager;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -81,8 +84,11 @@ public class DetailActivity extends AppCompatActivity {
         recyclerViewSubData.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerViewSubData.setLayoutManager(mLayoutManager);
-        //recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        recyclerViewSubData.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST, 0));
         recyclerViewSubData.setItemAnimator(new DefaultItemAnimator());
+
+        //recyclerViewSubData.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
+
         recyclerViewSubData.setAdapter(mSubAdapter);
 
 
@@ -125,4 +131,10 @@ public class DetailActivity extends AppCompatActivity {
         System.out.println(subNumbers);
     }
 
+    public void findInMapDetail(String mapToFind){
+        System.out.println("Cerramos y enviamos coordenadas");
+        System.out.println(mapToFind);
+        //finish();
+        viewPager.setCurrentItem(1);
+    }
 }

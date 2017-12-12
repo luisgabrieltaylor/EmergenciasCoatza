@@ -1,4 +1,4 @@
-#Wed Nov 22 17:02:31 CST 2017
+#Thu Nov 23 18:49:12 CST 2017
 base.0=D\:\\EmergenciasCoatza\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
 renamed.0=classes.dex
 file.0=D\:\\EmergenciasCoatza\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7\\classes.dex

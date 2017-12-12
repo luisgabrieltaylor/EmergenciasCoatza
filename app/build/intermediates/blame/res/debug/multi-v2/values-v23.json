@@ -4,7 +4,7 @@
             "outputFile": "D:\\EmergenciasCoatza\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\71808e2489787ce45a316b4a5b2c1941\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.4.0.aar\\92041f50fc82aeee8bd4b233da9380f3\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-25.4.0.aar\\37a936a6714d695ca4423653ea019d63\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\cardview-v7-25.4.0.aar\\e8c619a3e199f423f71a05364373a992\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

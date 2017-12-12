@@ -45,6 +45,7 @@ import emergencias.sainthannaz.com.emergenciascoatza.app.MyApplication;
 import emergencias.sainthannaz.com.emergenciascoatza.model.Numbers;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.ConnectivityStatus;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.DatabaseHandler;
+import emergencias.sainthannaz.com.emergenciascoatza.tools.DividerItemDecoration;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.Hosts;
 import emergencias.sainthannaz.com.emergenciascoatza.tools.PreferanceManager;
 
@@ -82,7 +83,7 @@ public class ResumeFragment extends Fragment {
         mAdapter = new NumbersAdapter(numbersList, getContext());
         mAdView = (AdView) view.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
-                //.addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+                .addTestDevice("F62165018C7E1793B8F11EBFC3745FEA")
                 // Check the LogCat to get your test device ID
                 //.addTestDevice("B2AA3E70A677C5F4956FF6A5601D3744")
                 .build();
@@ -114,6 +115,7 @@ public class ResumeFragment extends Fragment {
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(mLayoutManager);
         //recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
+        recyclerView.addItemDecoration(new DividerItemDecoration(getContext(), DividerItemDecoration.VERTICAL_LIST, 0));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
         prefManager = new PreferanceManager(getContext());

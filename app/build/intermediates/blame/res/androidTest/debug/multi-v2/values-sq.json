@@ -4,7 +4,24 @@
             "outputFile": "D:\\EmergenciasCoatza\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-sq\\values-sq.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.0.aar\\b78d26b10063d54354dcfad46284db72\\res\\values-sq\\values.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.6.0.aar\\417fddf34660dc60a457ec712a175204\\res\\values-sq\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10",
+                        "startColumns": "0,0,0,0,0,0,0",
+                        "startOffsets": "237,307,434,497,561,648,763",
+                        "endColumns": "69,126,62,63,86,114,69",
+                        "endOffsets": "306,433,496,560,647,762,832"
+                    },
+                    "to": {
+                        "startLines": "19,20,21,22,23,24,25",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "2786,2860,2991,3058,3126,3217,3336",
+                        "endColumns": "73,130,66,67,90,118,73",
+                        "endOffsets": "2855,2986,3053,3121,3212,3331,3405"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.6.0.aar\\c369d018d037af17a0d82273d4a16cd5\\res\\values-sq\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\db406d6adb79023de983a1614cbb176b\\res\\values-sq\\values.xml",
+                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.6.0.aar\\3d32dd4250f90d95e6da0e3264942173\\res\\values-sq\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -35,23 +52,6 @@
                         "startOffsets": "1168",
                         "endColumns": "187",
                         "endOffsets": "1351"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Gabriel\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-ads-11.6.0.aar\\93c8587d09f7446f768d73185ed3887e\\res\\values-sq\\values.xml",
-                    "from": {
-                        "startLines": "4,5,6,7,8,9,10",
-                        "startColumns": "0,0,0,0,0,0,0",
-                        "startOffsets": "237,307,434,497,561,648,763",
-                        "endColumns": "69,126,62,63,86,114,69",
-                        "endOffsets": "306,433,496,560,647,762,832"
-                    },
-                    "to": {
-                        "startLines": "19,20,21,22,23,24,25",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "2786,2860,2991,3058,3126,3217,3336",
-                        "endColumns": "73,130,66,67,90,118,73",
-                        "endOffsets": "2855,2986,3053,3121,3212,3331,3405"
                     }
                 }
             ]

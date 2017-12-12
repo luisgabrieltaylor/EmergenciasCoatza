@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/list_selector"
     android:orientation="horizontal"
+    android:background="?android:attr/selectableItemBackground"
     android:padding="5dip" >
 
     <!--  ListRow Left sied Thumbnail image -->
@@ -22,7 +23,6 @@
 
     </LinearLayout>
 
-    <!-- Title Of Song-->
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -40,7 +40,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:textColor="#343434"
+        android:textColor="#505050"
         android:lines="2"
         android:maxLines="2"
         android:layout_marginRight="15dp"
@@ -48,7 +48,6 @@
         android:layout_marginTop="10dip"
         android:layout_toRightOf="@+id/thumbnail"/>
 
-    <!-- description -->
     <TextView
         android:id="@+id/category"
         android:layout_width="fill_parent"
@@ -57,10 +56,9 @@
         android:textColor="#343434"
         android:textSize="10dip"
         android:textStyle="bold"
-        android:layout_marginTop="10dip"
+        android:layout_marginTop="8dip"
         android:layout_toRightOf="@+id/thumbnail"/>
 
-    <!-- Rightend update -->
     <TextView
         android:id="@+id/update"
         android:layout_width="wrap_content"
@@ -73,10 +71,9 @@
         android:textColor="#585858"
         android:textStyle="bold"/>
 
-    <!-- Rightend Arrow -->
     <ImageView android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_rarrow"
+        app:srcCompat="@drawable/ic_rarrow"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"/>
 

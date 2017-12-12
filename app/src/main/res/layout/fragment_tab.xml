@@ -13,7 +13,7 @@
         app:tabGravity="fill"
         app:tabMode="fixed"
         android:background="#666666"
-        app:tabIndicatorColor="#dcdcdb"
+        app:tabIndicatorColor="#5a88ff"
         app:tabSelectedTextColor="#cacaca"
         app:tabTextColor="#ffffff"
         android:layout_width="match_parent"

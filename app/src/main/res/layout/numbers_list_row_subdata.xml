@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
@@ -10,17 +11,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="3dip"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
-        android:background="@drawable/image_bg"
         android:layout_marginRight="10dip">
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cover"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/ic_old_phone"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#7940db"/>
+        <!--<ImageView
             android:id="@+id/cover"
             android:background="?android:attr/selectableItemBackground"
-            android:src="@drawable/phone_call"
+            app:srcCompat="@drawable/phone_call"
             android:layout_width="60dip"
-            android:layout_height="60dip"/>
-
+            android:layout_height="60dip"/>-->
     </LinearLayout>
 
     <!-- Title Of Song-->
@@ -30,9 +40,10 @@
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/thumbnail"
         android:layout_toRightOf="@+id/thumbnail"
-        android:textColor="#040404"
+        android:layout_marginTop="10dp"
+        android:textColor="#5720b7"
         android:typeface="sans"
-        android:textSize="17dip"
+        android:textSize="18dip"
         android:textStyle="bold"/>
 
     <!-- description -->
@@ -41,20 +52,21 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/phone"
-        android:textColor="#343434"
+        android:textColor="#787878"
         android:lines="2"
         android:maxLines="2"
         android:layout_marginRight="15dp"
-        android:textSize="13dip"
-        android:layout_marginTop="10dip"
+        android:textSize="15dip"
+        android:layout_marginTop="5dip"
         android:layout_toRightOf="@+id/thumbnail"/>
 
     <Button
+        android:id="@+id/searchInMap"
         android:layout_marginTop="5dp"
         android:text="@string/view_map"
-        android:drawableLeft="@drawable/ic_map"
-        android:drawablePadding="15dp"
-        android:layout_below="@+id/thumbnail"
+        android:layout_below="@id/address"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:background="?android:attr/selectableItemBackground"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <!-- description -->
